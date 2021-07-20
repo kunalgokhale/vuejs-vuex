@@ -1,0 +1,35 @@
+/* Base Margin and Padding */
+$base-margin: 5px;
+$base-padding: 5px;
+
+/* Breakpoints */
+$screen-xs: 576px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+/* Grid Columns */
+$grid-columns: 12;
+
+/* Fonts */
+@font-face {
+    font-family: "Noto-Regular";
+    src: url("~@/assets/fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Italic";
+    src: url("~@/assets/fonts/NotoSans-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Bold";
+    src: url("~@/assets/fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Noto-BoldItalic";
+    src: url("~@/assets/fonts/NotoSans-BoldItalic.ttf");
+}

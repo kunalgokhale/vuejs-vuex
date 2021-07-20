@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="row">
     <app-registration></app-registration>
     <app-registrations></app-registrations>
   </div>
