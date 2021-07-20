@@ -1,0 +1,267 @@
+/* Base Margin and Padding */
+$base-margin: 10px;
+$base-padding: 10px;
+
+/* Breakpoints */
+$screen-xs: 576px;
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1400px;
+
+/* Grid Columns */
+$grid-columns: 12;
+
+
+* {
+    font-family: "Noto-Regular", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rows */
+.row {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    gap: 20px;
+}
+
+/* Colums */
+[class^="col-"] {
+    display: inline-block;
+}
+
+.col-1 {
+    grid-column: span 1;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-5 {
+    grid-column: span 5;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-7 {
+    grid-column: span 7;
+}
+
+.col-8 {
+    grid-column: span 8;
+}
+
+.col-9 {
+    grid-column: span 9;
+}
+
+.col-10 {
+    grid-column: span 10;
+}
+
+.col-11 {
+    grid-column: span 11;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+@media screen and (max-width: var($screen-xs)) {}
+
+/* Fonts */
+@font-face {
+    font-family: "Noto-Regular";
+    src: url("~@/assets/fonts/NotoSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Italic";
+    src: url("~@/assets/fonts/NotoSans-Italic.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Bold";
+    src: url("~@/assets/fonts/NotoSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Noto-BoldItalic";
+    src: url("~@/assets/fonts/NotoSans-BoldItalic.ttf");
+}
+
+/* Margins */
+.m-0 {
+    margin: calc(#{$base-margin} * 1);
+}
+
+.m-1 {
+    margin: calc(#{$base-margin} * 1);
+}
+
+.m-2 {
+    margin: calc(#{$base-margin} * 2);
+}
+
+.m-3 {
+    margin: calc(#{$base-margin} * 3);
+}
+
+.m-4 {
+    margin: calc(#{$base-margin} * 4);
+}
+
+.m-5 {
+    margin: calc(#{$base-margin} * 5);
+}
+
+.m-6 {
+    margin: calc(#{$base-margin} * 6);
+}
+
+.mt-0 {
+    margin-top: calc(#{$base-margin} * 0);
+}
+
+.mt-1 {
+    margin-top: calc(#{$base-margin} * 1);
+}
+
+.mt-2 {
+    margin-top: calc(#{$base-margin} * 2);
+}
+
+.mt-3 {
+    margin-top: calc(#{$base-margin} * 3);
+}
+
+.mt-4 {
+    margin-top: calc(#{$base-margin} * 4);
+}
+
+.mt-5 {
+    margin-top: calc(#{$base-margin} * 5);
+}
+
+.mt-6 {
+    margin-top: calc(#{$base-margin} * 6);
+}
+
+.mr-0 {
+    margin-right: calc(#{$base-margin} * 0);
+}
+
+.mr-1 {
+    margin-right: calc(#{$base-margin} * 1);
+}
+
+.mr-2 {
+    margin-right: calc(#{$base-margin} * 2);
+}
+
+.mr-3 {
+    margin-right: calc(#{$base-margin} * 3);
+}
+
+.mr-4 {
+    margin-right: calc(#{$base-margin} * 4);
+}
+
+.mr-5 {
+    margin-right: calc(#{$base-margin} * 5);
+}
+
+.mr-6 {
+    margin-right: calc(#{$base-margin} * 6);
+}
+
+.mb-0 {
+    margin-bottom: calc(#{$base-margin} * 0);
+}
+
+.mb-1 {
+    margin-bottom: calc(#{$base-margin} * 1);
+}
+
+.mb-2 {
+    margin-bottom: calc(#{$base-margin} * 2);
+}
+
+.mb-3 {
+    margin-bottom: calc(#{$base-margin} * 3);
+}
+
+.mb-4 {
+    margin-bottom: calc(#{$base-margin} * 4);
+}
+
+.mb-5 {
+    margin-bottom: calc(#{$base-margin} * 5);
+}
+
+.mb-6 {
+    margin-bottom: calc(#{$base-margin} * 6);
+}
+
+.ml-0 {
+    margin-left: calc(#{$base-margin} * 0);
+}
+
+.ml-1 {
+    margin-left: calc(#{$base-margin} * 1);
+}
+
+.ml-2 {
+    margin-left: calc(#{$base-margin} * 2);
+}
+
+.ml-3 {
+    margin-left: calc(#{$base-margin} * 3);
+}
+
+.ml-4 {
+    margin-left: calc(#{$base-margin} * 4);
+}
+
+.ml-5 {
+    margin-left: calc(#{$base-margin} * 5);
+}
+
+.ml-6 {
+    margin-left: calc(#{$base-margin} * 6);
+}
+
+
+/* Buttons */
+button {
+    height: 40px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 0 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    min-width: 120px;
+}
+
+button:hover {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
