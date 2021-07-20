@@ -1,8 +1,8 @@
 <template>
-  <div id="registration">
+  <div id="registration" class="col-6 col-sm-12 col-xs-12">
     <h3>Register here</h3>
     <hr />
-    <div class="row m-1" v-for="user in users" v-bind:key="user.id">
+    <div class="m-1" v-for="user in users" v-bind:key="user.id">
       <h4>{{ user.name }}</h4>
       <button @click="registerUser(user)">Register</button>
     </div>
@@ -18,25 +18,12 @@ export default {
   },
   methods: {
     registerUser(user) {
-     this.$store.commit('registerUser', user.id);
+     this.$store.dispatch('doUserRegistration', user.id);
     },
   },
 };
 </script>
 
 <style scoped>
-#registration {
-  box-shadow: 1px 1px 2px 1px #ccc;
-  margin: 20px;
-  padding: 20px;
-  display: inline-block;
-  width: 300px;
-  vertical-align: top;
-}
-.row h4 {
-  display: inline-block;
-  width: 70%;
-  text-align: left;
-  margin: 0 0 10px 0;
-}
+
 </style>

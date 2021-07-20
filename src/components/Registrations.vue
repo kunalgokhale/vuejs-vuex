@@ -1,5 +1,5 @@
 <template>
-  <div id="registrations">
+  <div id="registrations" class="col-6 col-sm-12 col-xs-12">
     <div class="summary">
       <h3>Registrations</h3>
       <h5>Total: {{ total }}</h5>
@@ -39,36 +39,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#registrations {
-  box-shadow: 1px 1px 2px 1px #ccc;
-  margin: 20px;
-  padding: 20px;
-  display: inline-block;
-  width: 300px;
-  vertical-align: top;
-  text-align: left;
-}
-.summary {
-  text-align: center;
-}
-.row h4 {
-  display: inline-block;
-  width: 30%;
-  margin: 0 0 10px 0;
-  box-sizing: border-box;
-}
-.row span {
-  width: 30%;
-  color: red;
-  cursor: pointer;
-}
-.row span:hover {
-  color: darkred;
-}
-.date {
-  display: inline-block;
-  width: 38%;
-  text-align: right;
-  box-sizing: border-box;
-}
+
 </style>
